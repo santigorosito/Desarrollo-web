@@ -9,17 +9,13 @@
     justify-content: center;
 }
 
+ul{
+    
+}
+
 .titulo{    
     font-weight: bold;
     font-size: 110px;}
-
-ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    list-style-type: none;
-    background-image: linear-gradient(to left,white, gray);
-}
 
 .enlaces li{
     padding: 20px;
@@ -77,7 +73,7 @@ ul{
 }
 
 footer{
-    background-image: linear-gradient(white, gray);
+    display: flex;
 }
 
 .footer_div{
@@ -85,6 +81,8 @@ footer{
 }
 
 .redes{
+    flex-direction: row;
+    justify-content: center;
     height: 50px;
     width: 50px;   
     margin: 0px 200px; 
@@ -94,8 +92,7 @@ footer{
     background-color: #ffffff;
     margin: 10px;
 }
-
-.cuerpo{
+/*.cuerpo{
     display: grid;
     grid-template-areas: 
     "navegador navegador"
@@ -106,9 +103,9 @@ footer{
     grid-template-rows: 0.5fr 5fr 0.2fr;
     margin: 10px;
     background-image: linear-gradient(gray,black);
-}
+}*/
 
-.navegador{
+/*.navegador{
     grid-area: navegador;
 }
 
@@ -120,7 +117,7 @@ footer{
     grid-area: foter;
 }
 
-@media  screen and (max-width:768px){
+/*@media  screen and (max-width:768px){
     .cuerpo{
         grid-template-columns: auto auto;
         grid-template-rows: 0.1fr 3fr 0.2fr;
@@ -190,7 +187,8 @@ footer{
         flex-direction: column;
         align-items: flex-start;
     }
-}
+}*/
+
 /*CONTACTO*/
 
 .p1{
@@ -218,12 +216,24 @@ footer{
     width: 400px;
 }
 
-/*PRODUCTO*/
+/*PRODUCTO*/ 
+
+.titulo_producto{
+    background-color: #ffffff;
+}
+
+.fondo{
+    background-color: #000;
+}
+
+.caro{
+    margin: 50px 0px 0px 0px;
+    padding: 100px;
+}
 
 .img2{
-    margin: 10px;
-    width: 700px;
-    height: 700px;
+    width: 100%;
+    height: auto;
 }
 
 /*SOBRENOSOTROS*/
