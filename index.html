@@ -7,41 +7,49 @@
     <title>SILLA GAMER</title>
     <link rel="shortcut icon" href="../SILLAS GAMERS-SANTIAGO GOROSITO/imagenes/silla-de-gamer.png"/>
     <link rel="stylesheet" href="../SILLAS GAMERS-SANTIAGO GOROSITO/css/estilos.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body class="cuerpo">  
-        <header class="navegador">
-            <nav class="logotitulo">
-                <article class="iniciologo">
-                    <img src="../SILLAS GAMERS-SANTIAGO GOROSITO/imagenes/silla-de-gamer.png" class="img1">
-                </article>
-                <article class="titulosilla">
-                    <h1 class="titulo">Silla Gamer</h1> 
-                </article>
-            </nav>
-            <nav class="menu">
-                <ul class="enlaces">
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="paginas/producto.html" target="_blank">Producto</a></li>
-                    <li><a href="paginas/armar_tu_silla_gamer.html" target="_blank">Armar tu silla</a></li>
-                    <li><a href="paginas/sobre_nosotros.html" target="_blank">Sobre nosotros</a></li>
-                    <li><a href="paginas/contacto.html" target="_blank">Contacto</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main class="contenido">
+              <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                  <div class="col-lg-8 logo-titulo">
+                    <img src="./imagenes/descarga.png" class="col-lg-1" alt="">
+                    <h1 class="text-end h4 mt-4 mb-4 col-lg-6 titulo">SILLAS GAMER</h1>
+                  </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end h5" id="navbarNav">
+                        <ul class="navbar-nav">
+                        <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a></li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="paginas/producto.html" target="_blank">Producto</a></li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="paginas/armar_tu_silla_gamer.html" target="_blank">Armar tu silla</a></li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="paginas/sobre_nosotros.html" target="_blank">Sobre nosotros</a></li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="paginas/contacto.html" target="_blank">Contacto</a></li>
+                        </ul>
+                    </div>
+                </div>
+        </nav>
+        <header class="contenido">
             <article class="silla">
-                <img src="../SILLAS GAMERS-SANTIAGO GOROSITO/imagenes/sillas pantalla de incio.jpg" class="img4">
-                <p class="text1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur accusamus eum odit dolor molestiae cupiditate facere fugit nesciunt laboriosam ipsum?</p>
+                <img src="../SILLAS GAMERS-SANTIAGO GOROSITO/imagenes/sillas pantalla de incio.jpg" data-aos="fade-down-right" data-aos-duration="3000" class="img4">
+                <p data-aos="flip-down" data-aos-duration="2000" class="text1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur accusamus eum odit dolor molestiae cupiditate facere fugit nesciunt laboriosam ipsum?</p>
             </article>
             <article class="silla2">
-                <img src="../SILLAS GAMERS-SANTIAGO GOROSITO/imagenes/incio2.jpg" class="img5">
-                <p class="text1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus aperiam nesciunt perferendis corporis nemo accusantium similique soluta molestiae nam sapiente?</p>
+                <img src="../SILLAS GAMERS-SANTIAGO GOROSITO/imagenes/incio2.jpg" data-aos="fade-down-left" data-aos-duration="3000" class="img4">
+                <p data-aos="flip-down" data-aos-duration="2000" class="text1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus aperiam nesciunt perferendis corporis nemo accusantium similique soluta molestiae nam sapiente?</p>
             </article>
                 <article class="silla">
-                <img src="../SILLAS GAMERS-SANTIAGO GOROSITO/imagenes/inicio3.jpg" class="img4">
-                <p class="text1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat maiores sunt temporibus nostrum nemo provident amet? Voluptatibus modi nisi minima!</p>
+                <img src="../SILLAS GAMERS-SANTIAGO GOROSITO/imagenes/inicio3.jpg" data-aos="fade-up-right" data-aos-duration="3000" class="img4">
+                <p data-aos="flip-down" data-aos-duration="2000" class="text1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat maiores sunt temporibus nostrum nemo provident amet? Voluptatibus modi nisi minima!</p>
             </article>
-        </main>
+          </header>
         <footer class="footer">
             <div class="footer_div">
                 <img src="../SILLAS GAMERS-SANTIAGO GOROSITO/imagenes/instagram.png" class="redes">
@@ -50,5 +58,8 @@
                 <img src="../SILLAS GAMERS-SANTIAGO GOROSITO/imagenes/whatsapp.png" class="redes">
             </div>
         </footer>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
