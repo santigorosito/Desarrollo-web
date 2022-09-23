@@ -7,6 +7,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    color: #ffffff;
 }
 
 .titulo{    
@@ -18,7 +19,8 @@ ul{
     flex-direction: row;
     justify-content: flex-end;
     list-style-type: none;
-    background-color: #000;
+    margin: 0px 0px 0px 0px;
+    padding: 0px;
 }
 
 .enlaces li{
@@ -38,7 +40,8 @@ ul{
     justify-content: flex-start;
     align-items: center;
     height: auto;
-    border: 05px solid #000;
+    border: 05px solid #ffffff;
+    margin: 20px;
 }
 
 .img4{
@@ -53,7 +56,8 @@ ul{
     flex-direction: row-reverse;
     align-items: center;
     height: auto;
-    border: 05px solid #000;
+    border: 05px solid #ffffff;
+    margin: 20px;
 }
 
 
@@ -65,15 +69,12 @@ ul{
 .text1{
     font-size: 40px;
     margin: 150px;
+    color: #ffffff;
 }
 
 .img1{
     height: 130px;
     width: 150px;
-}
-
-footer{
-    background-color: #000;
 }
 
 .footer_div{
@@ -87,8 +88,7 @@ footer{
 }
 
 .contenido{
-    background-color: #ffffff;
-    margin: 10px;
+    margin: 50px;
 }
 
 .cuerpo{
@@ -101,6 +101,7 @@ footer{
     grid-template-columns: 2fr 2fr;
     grid-template-rows: 0.5fr 5fr 0.2fr;
     margin: 10px;
+    background-image: linear-gradient(#57065f,#790976,#020024);
 }
 
 .navegador{
@@ -129,9 +130,11 @@ footer{
     }
     .img4{
         width: 500px;
+        height: 550px;
     }
     .img5{
         width: 500px;
+        height: 580px;
     }
     .text1{
         width: 220px;
@@ -146,7 +149,7 @@ footer{
 
 @media (max-width:500px){
     .cuerpo{
-        grid-template-columns: auto;
+        grid-template-columns: 1fr;
         grid-template-rows: 0.2fr 2fr 0.2fr;
         grid-template-areas: 
             "navegador"
@@ -185,8 +188,19 @@ footer{
         flex-direction: column;
         align-items: flex-start;
     }
+    .footer_div{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .redes{
+        height: 40px;
+        width: 40px;
+        margin: 0px 0px;
+    }
 }
 /*CONTACTO*/
+
 
 .p1{
     padding: 10px;
@@ -214,13 +228,110 @@ footer{
 }
 
 /*PRODUCTO*/
+.fondo{
+    display: grid;
+    grid-template-areas: 
+    "navegador navegador"
+    "menu menu"
+    "foter foter";
+    gap: 0px 0px;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 0.5fr 5fr 0.2fr;
+    margin: 20px;
+    background-image: linear-gradient(#57065f,#790976,#020024);
+}
+.nav{
+    grid-area: navegador;
+}
+
+.conte{
+    grid-area: menu;
+}
+
+.footer{
+    grid-area: foter;
+}
+
+.conte{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 30px;
+}
 
 .img2{
     margin: 10px;
     width: 700px;
     height: 700px;
+    border-radius: 70%;
 }
 
+.text2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+@media  screen and (max-width:768px){
+    .fondo{
+        grid-template-columns: auto auto;
+        grid-template-rows: 0.2fr 5fr 0.2fr;
+        grid-template-areas: 
+        "navegador navegador"
+        "menu menu"
+        "foter foter";
+    }
+    ul{
+        justify-content: center;
+    }
+    .img2{
+        margin: 10px;
+        width: 500px;
+        height: 500px;
+    }
+    .footer_div{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .redes{
+        height: 40px;
+        width: 40px;
+        margin: 0px 0px;
+    }
+}
+
+@media (max-width:500px){
+    .fondo{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 4fr 0.2fr;
+        grid-template-areas: 
+            "navegador"
+            "menu"
+            "foter";
+    }
+    ul{
+        flex-direction: column;
+        align-items: flex-start;
+    }   
+    .titulo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 70px;
+    }
+    .footer_div{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .redes{
+        height: 50px;
+        width: 50px;
+        margin: 0px 0px;
+    }
+}
 /*SOBRENOSOTROS*/
 
 .titulosobre{
