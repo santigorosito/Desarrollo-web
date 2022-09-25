@@ -1,4 +1,4 @@
-*{
+*/*{
     margin: 0;
     padding: 0;
 }
@@ -14,7 +14,7 @@
     font-weight: bold;
     font-size: 110px;}
 
-ul{
+.enlaces{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -199,7 +199,7 @@ ul{
         margin: 0px 0px;
     }
 }
-/*CONTACTO*/
+/*CONTACTO
 
 
 .p1{
@@ -227,7 +227,7 @@ ul{
     width: 400px;
 }
 
-/*PRODUCTO*/
+/*PRODUCTO
 .fondo{
     display: grid;
     grid-template-areas: 
@@ -332,7 +332,7 @@ ul{
         margin: 0px 0px;
     }
 }
-/*SOBRENOSOTROS*/
+/*SOBRENOSOTROS
 
 .titulosobre{
     font-size: 50px;
@@ -343,7 +343,7 @@ ul{
     font-style: italic;
 }
 
-/*ARMARTUSILLA*/
+/*ARMARTUSILLA
 
 .videotutorial{
     width: 800px;
@@ -378,4 +378,4 @@ ul{
     background-color: #000000;
     color: #ffffff;
     font-size: 30px;
-}
+}*/
