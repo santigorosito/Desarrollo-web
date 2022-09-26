@@ -345,15 +345,56 @@ ul{
 
 /*ARMARTUSILLA*/
 
+.fondo{
+    display: grid;
+    grid-template-areas: 
+    "navegador navegador"
+    "menu menu"
+    "foter foter";
+    gap: 0px 0px;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 0.5fr 5fr 0.2fr;
+    margin: 10px;
+    background-image: linear-gradient(#57065f,#790976,#020024);
+}
+
+.titulo2{
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.navegador{
+    grid-area: navegador;
+}
+
+.main{
+    grid-area: menu;
+}
+
+.footer{
+    grid-area: foter;
+}
+
+.video{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 .videotutorial{
     width: 800px;
     height: 600px;
     padding: 20px;
 }
 
+
 .h2{
-    font-size: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 30px;
     padding: 20px;
+    color: #ffffff;
 }
 
 .img3{
