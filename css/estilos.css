@@ -201,6 +201,11 @@ ul{
 }
 /*CONTACTO*/
 
+.contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .p1{
     padding: 10px;
@@ -335,12 +340,20 @@ ul{
 /*SOBRENOSOTROS*/
 
 .titulosobre{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     font-size: 50px;
+    color: #ffffff;
 }
 
-.textsobre{
+.textsobre{    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     font-size: 40px;
     font-style: italic;
+    color: #ffffff;
 }
 
 /*ARMARTUSILLA*/
@@ -387,6 +400,17 @@ ul{
     padding: 20px;
 }
 
+.ejem_silla{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.ejem_fotos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 
 .h2{
     display: flex;
@@ -398,25 +422,23 @@ ul{
 }
 
 .img3{
-    display: inline;
     margin: 10px;
     width: 600px;
     height: 600px;
 }
 
 .p{
-    display: inline;
     font-size: 30px;
-    padding: 0px 250px;
-    background-color: #000000;
-    color: #ffffff;
-    width: 20px;
-}
-
-.p4{
-    display: inline;
     padding: 0px 270px;
     background-color: #000000;
     color: #ffffff;
+    border: 02px solid #ffffff;
+}
+
+.p4{
+    padding: 0px 300px;
+    background-color: #000000;
+    color: #ffffff;
     font-size: 30px;
+    border: 02px solid #ffffff;
 }
