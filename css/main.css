@@ -49,7 +49,6 @@
     justify-content: flex-start;
     align-items: center;
     height: auto;
-    border: 05px solid #ffffff;
     margin: 20px; }
     .contenido .silla .img4 {
       height: 500px;
@@ -65,7 +64,6 @@
     flex-direction: row-reverse;
     align-items: center;
     height: auto;
-    border: 05px solid #ffffff;
     margin: 20px; }
     .contenido .silla2 .img5 {
       height: 500px;
