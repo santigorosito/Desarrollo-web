@@ -4,7 +4,9 @@
 
 .cuerpo {
   display: grid;
-  grid-template-areas: "navegador navegador" "menu menu" "foter foter";
+  grid-template-areas: "navegador navegador"
+ "menu menu"
+ "foter foter";
   gap: 0px 0px;
   grid-template-columns: 2fr 2fr;
   grid-template-rows: 0.5fr 5fr 0.2fr;
@@ -86,7 +88,9 @@
   .cuerpo {
     grid-template-columns: auto auto;
     grid-template-rows: 0.1fr 3fr 0.2fr;
-    grid-template-areas: "navegador navegador" "menu menu" "foter foter"; }
+    grid-template-areas: "navegador navegador"
+ "menu menu"
+ "foter foter"; }
     .cuerpo .enlaces {
       justify-content: center; }
     .cuerpo .img4 {
@@ -107,7 +111,9 @@
   .cuerpo {
     grid-template-columns: 1fr;
     grid-template-rows: 0.2fr 2fr 0.2fr;
-    grid-template-areas: "navegador" "menu" "foter"; }
+    grid-template-areas: "navegador"
+ "menu"
+ "foter"; }
     .cuerpo .enlaces {
       flex-direction: column;
       align-items: flex-start; }

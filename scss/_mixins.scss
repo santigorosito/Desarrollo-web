@@ -1,0 +1,18 @@
+@mixin medidas ($ancho, $alto, $color){
+    width: $ancho;
+    height: $alto;
+    color: $color;
+}
+
+@mixin flex($f, $fd, $jus){
+    flex: $f;
+    flex-direction: $fd;
+    justify-content: $jus;
+}
+
+@mixin grid($g, $gta, $gtc, $gtr){
+    grid: $g;
+    grid-template-areas: $gta;
+    grid-template-columns: $gtc;
+    grid-template-rows: $gtr;
+}
