@@ -1,0 +1,39 @@
+.fondo{
+    display: grid;
+    grid-template-areas: 
+    "navegador navegador"
+    "menu menu"
+    "foter foter";
+    gap: 0px 0px;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 0.5fr 5fr 0.2fr;
+    margin: 20px;
+    background-image: linear-gradient(#57065f,#790976,#020024);
+}
+.nav{
+    grid-area: navegador;
+}
+
+.conte{
+    grid-area: menu;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 30px;
+    .img2{
+        margin: 10px;
+        width: 700px;
+        height: 700px;
+        border-radius: 70%;}
+}
+
+.footer{
+    grid-area: foter;
+}
+
+.text2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
