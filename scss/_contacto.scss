@@ -6,14 +6,11 @@
         padding: 10px;
         margin: 10px;}
     .p2{
-        padding: 10px;
-        margin: 10px;}
+        @extend .p1;}
     .p3{
-        padding: 10px;
-        margin: 10px;}
+        @extend .p1;}
     .p5{
-        padding: 10px;
-        margin: 10px;}
+        @extend .p1;}
     .textmen{
         padding: 12px;
         width: 400px;}

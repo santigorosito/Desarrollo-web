@@ -53,8 +53,6 @@
         @include flex;
         .img3{
             margin: 10px;
-            width: 600px;
-            height: 600px;
-        }
+            @include medidas(600px,600px,none);}
     }
 }

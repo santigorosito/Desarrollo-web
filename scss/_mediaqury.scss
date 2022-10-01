@@ -1,5 +1,5 @@
 @media  screen and (max-width:768px){
-    .cuerpo{
+.cuerpo{
         grid-template-columns: auto auto;
         grid-template-rows: 0.1fr 3fr 0.2fr;
         grid-template-areas: 
@@ -7,21 +7,18 @@
         "menu menu"
         "foter foter";
         .enlaces{
-            justify-content: center;}
+        justify-content: center;}
         .img4{
-            width: 500px;
-            height: 550px;}
+        @include medidas(500px,550px,none);}
         .img5{
-            width: 500px;
-            height: 580px;}
-            .text1{
-            width: 220px;
-            font-size: 25px;}
+        @include medidas(500px,580px,none);}
+        .text1{
+        width: 220px;
+        font-size: 25px;}
         .redes{
-            height: 40px;
-            width: 40px;
-            margin: 30px 100px;}
-    }
+        @include medidas(40px,40px,none);
+        margin: 30px 100px;}
+}
 }
 
 
