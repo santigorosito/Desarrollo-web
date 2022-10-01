@@ -1,14 +1,10 @@
 .contenido{
     .titulosobre{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
+        @include flex;
         font-size: 50px;
         color: #ffffff;}
     .textsobre{    
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
+        @include flex;
         font-size: 40px;
         font-style: italic;
         color: #ffffff;}
