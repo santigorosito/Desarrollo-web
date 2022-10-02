@@ -14,13 +14,14 @@
 .navegador {
   grid-area: navegador; }
   .navegador .logotitulo {
-    display: flex;
+    flex: flex;
     flex-direction: row;
     justify-content: center;
     color: #ffffff; }
     .navegador .logotitulo .img1 {
+      width: 150px;
       height: 130px;
-      width: 150px; }
+      color: none; }
     .navegador .logotitulo .titulo {
       font-weight: bold;
       font-size: 110px; }
@@ -48,9 +49,10 @@
     align-items: center;
     height: auto;
     margin: 20px; }
-    .contenido .silla .img4 {
-      height: 500px;
-      width: 600px; }
+    .contenido .silla .img4, .contenido .silla .silla2 .img5, .contenido .silla2 .silla .img5 {
+      width: 500px;
+      height: 600px;
+      color: none; }
     .contenido .silla .text1 {
       font-size: 40px;
       margin: 150px;
@@ -63,9 +65,6 @@
     align-items: center;
     height: auto;
     margin: 20px; }
-    .contenido .silla2 .img5 {
-      height: 500px;
-      width: 600px; }
     .contenido .silla2 .text1 {
       font-size: 40px;
       margin: 150px;
@@ -76,24 +75,16 @@
   .footer .footer_div {
     margin: 20px; }
     .footer .footer_div .redes {
-      height: 50px;
       width: 50px;
+      height: 50px;
+      color: none;
       margin: 0px 200px; }
 
 .contacto {
   display: flex;
   flex-direction: column;
   align-items: center; }
-  .contacto .p1 {
-    padding: 10px;
-    margin: 10px; }
-  .contacto .p2 {
-    padding: 10px;
-    margin: 10px; }
-  .contacto .p3 {
-    padding: 10px;
-    margin: 10px; }
-  .contacto .p5 {
+  .contacto .p1, .contacto .p2, .contacto .p3, .contacto .p5 {
     padding: 10px;
     margin: 10px; }
   .contacto .textmen {
@@ -102,26 +93,27 @@
 
 .conte {
   grid-area: menu;
-  display: flex;
+  flex: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: center;
+  flex-wrap: wrap;
   margin: 30px; }
   .conte .img2 {
     margin: 10px;
     width: 700px;
     height: 700px;
+    color: none;
     border-radius: 70%; }
 
 .contenido .titulosobre {
-  display: flex;
+  flex: flex;
   flex-direction: row;
   justify-content: center;
   font-size: 50px;
   color: #ffffff; }
 
 .contenido .textsobre {
-  display: flex;
+  flex: flex;
   flex-direction: row;
   justify-content: center;
   font-size: 40px;
@@ -144,14 +136,14 @@
 .main {
   grid-area: menu; }
   .main .h2 {
-    display: flex;
+    flex: flex;
     flex-direction: row;
     justify-content: center;
     font-size: 30px;
     padding: 20px;
     color: #ffffff; }
   .main .video {
-    display: flex;
+    flex: flex;
     flex-direction: row;
     justify-content: center; }
     .main .video .videotutorial {
@@ -159,7 +151,7 @@
       height: 600px;
       padding: 20px; }
   .main .ejem_silla {
-    display: flex;
+    flex: flex;
     flex-direction: row;
     justify-content: center; }
     .main .ejem_silla .p {
@@ -175,13 +167,14 @@
       font-size: 30px;
       border: 02px solid #ffffff; }
   .main .ejem_fotos {
-    display: flex;
+    flex: flex;
     flex-direction: row;
     justify-content: center; }
     .main .ejem_fotos .img3 {
       margin: 10px;
       width: 600px;
-      height: 600px; }
+      height: 600px;
+      color: none; }
 
 @media screen and (max-width: 768px) {
   .cuerpo {
@@ -190,18 +183,21 @@
     grid-template-areas: "navegador navegador" "menu menu" "foter foter"; }
     .cuerpo .enlaces {
       justify-content: center; }
-    .cuerpo .img4 {
+    .cuerpo .img4, .cuerpo .contenido .silla2 .img5, .contenido .silla2 .cuerpo .img5 {
       width: 500px;
-      height: 550px; }
+      height: 550px;
+      color: none; }
     .cuerpo .img5 {
       width: 500px;
-      height: 580px; }
+      height: 580px;
+      color: none; }
     .cuerpo .text1 {
       width: 220px;
       font-size: 25px; }
     .cuerpo .redes {
-      height: 40px;
       width: 40px;
+      height: 40px;
+      color: none;
       margin: 30px 100px; } }
 
 @media (max-width: 500px) {
@@ -214,7 +210,7 @@
       align-items: flex-start; }
     .cuerpo .text1 {
       display: none; }
-    .cuerpo .img4 {
+    .cuerpo .img4, .cuerpo .contenido .silla2 .img5, .contenido .silla2 .cuerpo .img5 {
       height: 400px;
       width: 500px; }
     .cuerpo .img5 {
