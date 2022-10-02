@@ -19,10 +19,10 @@
 .navegador{
     grid-area: navegador;
     .logotitulo{
-        @include flex(flex,row,center);
+        @include flex;
         color: #ffffff;
         .img1{
-            @include medidas(150px,130px,none);}
+            @include medidas(150px,130px);}
         .titulo{    
             font-weight: bold;
             font-size: 110px;}
@@ -54,7 +54,7 @@
         height: auto;
         margin: 20px;
         .img4{
-        @include medidas(500px,600px,none);}
+            @include medidas(500px,600px);}
         .text1{
         font-size: 40px;
         margin: 150px;
@@ -69,7 +69,7 @@
         height: auto;
         margin: 20px;
         .img5{
-            @extend .img4;}
+            @include medidas(500px,600px);}
         .text1{
         font-size: 40px;
         margin: 150px;
@@ -83,7 +83,7 @@
     .footer_div{
         margin: 20px;
         .redes{
-            @include medidas(50px,50px,none); 
+            @include medidas(50px,50px); 
             margin: 0px 200px;}
     }
 }

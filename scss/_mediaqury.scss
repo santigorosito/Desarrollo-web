@@ -9,21 +9,21 @@
         .enlaces{
         justify-content: center;}
         .img4{
-        @include medidas(500px,550px,none);}
+        @include medidas(500px,550px);}
         .img5{
-        @include medidas(500px,580px,none);}
+        @include medidas(500px,580px);}
         .text1{
         width: 220px;
         font-size: 25px;}
         .redes{
-        @include medidas(40px,40px,none);
+        @include medidas(40px,40px);
         margin: 30px 100px;}
 }
 }
 
 
-@media (max-width:500px){
-    .cuerpo{
+@media screen and (max-width:500px){
+.cuerpo{
         grid-template-columns: 1fr;
         grid-template-rows: 0.2fr 2fr 0.2fr;
         grid-template-areas: 

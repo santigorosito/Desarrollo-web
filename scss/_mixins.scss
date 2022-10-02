@@ -1,13 +1,12 @@
-@mixin medidas ($ancho, $alto, $color){
+@mixin medidas ($ancho, $alto){
     width: $ancho;
     height: $alto;
-    color: $color;
 }
 
-@mixin flex($f, $fd, $jus){
-    flex: $f;
-    flex-direction: $fd;
-    justify-content: $jus;
+@mixin flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 @mixin grid($g, $gta, $gtc, $gtr){

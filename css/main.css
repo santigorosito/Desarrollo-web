@@ -14,14 +14,13 @@
 .navegador {
   grid-area: navegador; }
   .navegador .logotitulo {
-    flex: flex;
+    display: flex;
     flex-direction: row;
     justify-content: center;
     color: #ffffff; }
     .navegador .logotitulo .img1 {
       width: 150px;
-      height: 130px;
-      color: none; }
+      height: 130px; }
     .navegador .logotitulo .titulo {
       font-weight: bold;
       font-size: 110px; }
@@ -49,10 +48,9 @@
     align-items: center;
     height: auto;
     margin: 20px; }
-    .contenido .silla .img4, .contenido .silla .silla2 .img5, .contenido .silla2 .silla .img5 {
+    .contenido .silla .img4 {
       width: 500px;
-      height: 600px;
-      color: none; }
+      height: 600px; }
     .contenido .silla .text1 {
       font-size: 40px;
       margin: 150px;
@@ -65,6 +63,9 @@
     align-items: center;
     height: auto;
     margin: 20px; }
+    .contenido .silla2 .img5 {
+      width: 500px;
+      height: 600px; }
     .contenido .silla2 .text1 {
       font-size: 40px;
       margin: 150px;
@@ -77,7 +78,6 @@
     .footer .footer_div .redes {
       width: 50px;
       height: 50px;
-      color: none;
       margin: 0px 200px; }
 
 .contacto {
@@ -93,7 +93,7 @@
 
 .conte {
   grid-area: menu;
-  flex: flex;
+  display: flex;
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
@@ -102,18 +102,17 @@
     margin: 10px;
     width: 700px;
     height: 700px;
-    color: none;
     border-radius: 70%; }
 
 .contenido .titulosobre {
-  flex: flex;
+  display: flex;
   flex-direction: row;
   justify-content: center;
   font-size: 50px;
   color: #ffffff; }
 
 .contenido .textsobre {
-  flex: flex;
+  display: flex;
   flex-direction: row;
   justify-content: center;
   font-size: 40px;
@@ -136,14 +135,14 @@
 .main {
   grid-area: menu; }
   .main .h2 {
-    flex: flex;
+    display: flex;
     flex-direction: row;
     justify-content: center;
     font-size: 30px;
     padding: 20px;
     color: #ffffff; }
   .main .video {
-    flex: flex;
+    display: flex;
     flex-direction: row;
     justify-content: center; }
     .main .video .videotutorial {
@@ -151,7 +150,7 @@
       height: 600px;
       padding: 20px; }
   .main .ejem_silla {
-    flex: flex;
+    display: flex;
     flex-direction: row;
     justify-content: center; }
     .main .ejem_silla .p {
@@ -167,14 +166,13 @@
       font-size: 30px;
       border: 02px solid #ffffff; }
   .main .ejem_fotos {
-    flex: flex;
+    display: flex;
     flex-direction: row;
     justify-content: center; }
     .main .ejem_fotos .img3 {
       margin: 10px;
       width: 600px;
-      height: 600px;
-      color: none; }
+      height: 600px; }
 
 @media screen and (max-width: 768px) {
   .cuerpo {
@@ -183,24 +181,21 @@
     grid-template-areas: "navegador navegador" "menu menu" "foter foter"; }
     .cuerpo .enlaces {
       justify-content: center; }
-    .cuerpo .img4, .cuerpo .contenido .silla2 .img5, .contenido .silla2 .cuerpo .img5 {
+    .cuerpo .img4 {
       width: 500px;
-      height: 550px;
-      color: none; }
+      height: 550px; }
     .cuerpo .img5 {
       width: 500px;
-      height: 580px;
-      color: none; }
+      height: 580px; }
     .cuerpo .text1 {
       width: 220px;
       font-size: 25px; }
     .cuerpo .redes {
       width: 40px;
       height: 40px;
-      color: none;
       margin: 30px 100px; } }
 
-@media (max-width: 500px) {
+@media screen and (max-width: 500px) {
   .cuerpo {
     grid-template-columns: 1fr;
     grid-template-rows: 0.2fr 2fr 0.2fr;
@@ -210,7 +205,7 @@
       align-items: flex-start; }
     .cuerpo .text1 {
       display: none; }
-    .cuerpo .img4, .cuerpo .contenido .silla2 .img5, .contenido .silla2 .cuerpo .img5 {
+    .cuerpo .img4 {
       height: 400px;
       width: 500px; }
     .cuerpo .img5 {
