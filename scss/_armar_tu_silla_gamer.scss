@@ -20,12 +20,12 @@
 .main{
     grid-area: menu;
     .h2{
-        @include flex;
+        @include flex(flex,row,center);
         font-size: 30px;
         padding: 20px;
         color: #ffffff;}
     .video{
-        @include flex;
+        @include flex(flex,row,center);
         .videotutorial{
             width: 800px;
             height: 600px;
@@ -33,7 +33,7 @@
         }
     }
     .ejem_silla{
-        @include flex;
+        @include flex(flex,row,center);
         .p{
             font-size: 30px;
             padding: 0px 270px;
@@ -50,7 +50,7 @@
         }
     }
     .ejem_fotos{
-        @include flex;
+        @include flex(flex,row,center);
         .img3{
             margin: 10px;
             @include medidas(600px,600px,none);}

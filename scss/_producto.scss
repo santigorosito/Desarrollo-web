@@ -1,6 +1,6 @@
 .conte{
     grid-area: menu;
-    @include flex;
+    @include flex(flex,row,center);
     flex-wrap: wrap;
     margin: 30px;
     .img2{

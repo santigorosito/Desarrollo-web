@@ -19,7 +19,7 @@
 .navegador{
     grid-area: navegador;
     .logotitulo{
-        @include flex;
+        @include flex(flex,row,center);
         color: #ffffff;
         .img1{
             @include medidas(150px,130px,none);}
