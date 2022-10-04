@@ -9,6 +9,8 @@
     <meta name="keywords" content="sillas, silla, gamer, silla gamer, armar una silla gamer, armar una silla, tutotial de silla gamer">
     <link rel="shortcut icon" href="../imagenes/silla-de-gamer.png"/>
     <link rel="stylesheet" href="../css/main.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body class="fondo">
     <header class="navegador">
@@ -33,16 +35,16 @@
     <main class="main">
         <h2 class="h2">En el siguiente video muestra cada paso para armar la silla gamer sin problemas</h2>
         <article class="video">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/0CfrhETEwEo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="videotutorial"></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/0CfrhETEwEo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" class="videotutorial"></iframe>
         </article>
         <div class="fotos">
             <article class="ejem_silla">
-                <h2 class="p">DESARMADA</h2>
-                <img src="../imagenes/silla desarmada.jpg" class="img3">
+                <h2 data-aos="zoom-in-right" data-aos-duration="1500" class="p">DESARMADA</h2>
+                <img src="../imagenes/silla desarmada.jpg" data-aos="zoom-in-right" data-aos-duration="1500" class="img3">
             </article>
             <article class="ejem_fotos">
-                <h2 class="p4">ARMADA</h2>
-                <img src="../imagenes/silla armada.jpg" class="img3">
+                <h2 data-aos="zoom-in-left" data-aos-duration="1500" class="p4">ARMADA</h2>
+                <img src="../imagenes/silla armada.jpg" data-aos="zoom-in-left" data-aos-duration="1500" class="img3">
             </article>
         </div>
     </main>
@@ -54,5 +56,8 @@
             <img src="../imagenes/whatsapp.png" class="redes">
         </div>
     </footer>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
