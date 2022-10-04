@@ -75,16 +75,15 @@
         margin: 150px;
         color: #ffffff;}
     }
-    
 }
 
 .footer{
     grid-area: foter;
     .footer_div{
-        margin: 20px;
+        @include foter;
         .redes{
             @include medidas(50px,50px); 
-            margin: 0px 200px;}
+            margin: 0px 0px;}
     }
 }
 

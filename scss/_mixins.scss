@@ -16,3 +16,9 @@
     grid-template-rows: $gtr;
 }
 
+@mixin foter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+

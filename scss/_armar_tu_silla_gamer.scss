@@ -12,6 +12,7 @@
 }
 
 .navegador{
+    grid-area: navegador;
     .titulo2{
         font-weight: bold;
         font-size: 55px;}
@@ -32,8 +33,13 @@
             padding: 20px;
         }
     }
+    .fotos{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
     .ejem_silla{
-        @include flex;
+        display: grid;
+        justify-content: center;
         .p{
             font-size: 30px;
             padding: 0px 270px;
@@ -41,18 +47,33 @@
             color: #ffffff;
             border: 02px solid #ffffff;
         }
-        .p4{
-            padding: 0px 300px;
-            background-color: #000000;
-            color: #ffffff;
-            font-size: 30px;
-            border: 02px solid #ffffff;
-        }
+        .img3{
+            @include flex;
+            margin: 50px;
+            @include medidas(600px,600px);}
     }
     .ejem_fotos{
-        @include flex;
+        display: grid;
+        justify-content: center;
+        .p4{
+            font-size: 30px;
+            padding: 0px 270px;
+            background-color: #000000;
+            color: #ffffff;
+            border: 02px solid #ffffff;
+        }
         .img3{
-            margin: 10px;
+            @include flex;
+            margin: 50px;
             @include medidas(600px,600px);}
+    }
+}
+}
+
+footer{
+    grid-area: foter;
+    margin: 10px;
+    .footer_div{
+    @include foter;
     }
 }

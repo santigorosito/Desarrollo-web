@@ -7,6 +7,7 @@
         "menu menu"
         "foter foter";
         .navegador{
+        grid-area: navegador;
         .enlaces{
                 justify-content: center;}
         }
@@ -20,6 +21,7 @@
                 font-size: 25px;}
         }
         .footer_div{
+        grid-area: foter;
                 .redes{
                 @include medidas(40px,40px);
                 margin: 30px 100px;}
@@ -49,8 +51,8 @@
                         align-items: center;
                         font-size: 70px;}
                 .enlaces{
-                                flex-direction: column;
-                                align-items: flex-start;}
+                        flex-direction: column;
+                        align-items: flex-start;}
         }
         .contenido{
                 flex-direction: column;
@@ -80,52 +82,49 @@
 
 /*PRODUCTO*/
 @media  screen and (max-width:768px){
-        .fondo{
+        .fondo2{
         grid-template-columns: auto auto;
         grid-template-rows: 0.2fr 5fr 0.2fr;
         grid-template-areas: 
         "navegador navegador"
         "menu menu"
         "foter foter";
-        }
-        .navegador{
+        .navegador2{
         grid-area: navegador;
         .enlaces{
                 justify-content: center;}
         }
         .conte{
         grid-area: menu;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
         .img2{
                 margin: 10px;
                 width: 500px;
                 height: 500px;}
         }
-        .footer_div{
-        grid-area: foter;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
+        .footer_div2{
+                @include foter;
         .redes{
                 height: 40px;
                 width: 40px;
-                margin: 0px 0px;}
+                margin: 0px 50px;}
         }
 }
+}
 
-@media (max-width:500px){
-        .fondo{
+@media screen and (max-width:500px){
+        .fondo2{
         grid-template-columns: 1fr;
         grid-template-rows: 0.2fr 4fr 0.2fr;
         grid-template-areas: 
         "navegador"
         "menu"
         "foter";
-        }
-        .navegador{
+        .navegador2{
         .titulo{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
                 font-size: 70px;}
         .enlaces{
                 flex-direction: column;
@@ -133,14 +132,91 @@
         }
         .conte{
                 display: flex;
-                flex-direction: column;}
-        .footer_div{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
+                flex-direction: column;
+                justify-content: center;
+                margin: 0px;}
+        .footer_div2{
+                @include foter;
         .redes{
                 height: 50px;
                 width: 50px;
                 margin: 0px 0px;}
         }
 }
+}
+
+/*ARMAR TU SILLA*/
+
+@media  screen and (max-width:768px){
+        .fondo{
+        grid-template-columns: auto auto;
+        grid-template-rows: 0.2fr 6fr 0.3fr;
+        grid-template-areas: 
+        "navegador navegador"
+        "menu menu"
+        "foter foter";
+        .navegador{
+        grid-area: navegador;
+        .titulo2{
+                margin: 25px 0px 0px 0px;
+                font-size: 50px;}
+        .enlaces{
+                justify-content: center;
+                font-size: 70px;}
+        }
+        .main{
+        grid-area: menu;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .videotutorial{
+                width: 1000px;
+        }
+        }
+        .footer_div{
+        @include foter;
+        margin: 10px;
+        }
+}
+}
+
+@media screen and (max-width:500px){
+        .fondo{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 4fr 0.2fr;
+        grid-template-areas: 
+        "navegador"
+        "menu"
+        "foter";
+        .navegador{
+        .titulo2{
+                text-align: center;
+                font-size: 40px;}
+        .enlaces{
+                flex-direction: column;
+                align-items: flex-start;}
+        }
+        .main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .h2{
+                font-size: 40px;
+                text-align: center;
+        }
+        .videotutorial{
+                width: 650px;
+        }
+        .fotos{
+                display: grid;
+        }
+        }
+        .footer_div{
+        @include foter;
+        .redes{
+                height: 50px;
+                width: 50px;
+                margin: 0px 0px;}
+        }
+}
+} 
