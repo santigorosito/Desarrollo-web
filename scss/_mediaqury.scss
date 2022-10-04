@@ -84,7 +84,7 @@
 @media  screen and (max-width:768px){
         .fondo2{
         grid-template-columns: auto auto;
-        grid-template-rows: 0.2fr 5fr 0.2fr;
+        grid-template-rows: 0.2fr 6fr 0.2fr;
         grid-template-areas: 
         "navegador navegador"
         "menu menu"
@@ -92,7 +92,11 @@
         .navegador2{
         grid-area: navegador;
         .enlaces{
-                justify-content: center;}
+                justify-content: center;
+                .menu{
+                        font-size: 25px;
+                }
+        }
         }
         .conte{
         grid-area: menu;
@@ -220,3 +224,5 @@
         }
 }
 } 
+
+/*SOBRE NOSOTROS*/

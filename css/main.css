@@ -305,12 +305,14 @@ footer {
 @media screen and (max-width: 768px) {
   .fondo2 {
     grid-template-columns: auto auto;
-    grid-template-rows: 0.2fr 5fr 0.2fr;
+    grid-template-rows: 0.2fr 6fr 0.2fr;
     grid-template-areas: "navegador navegador" "menu menu" "foter foter"; }
     .fondo2 .navegador2 {
       grid-area: navegador; }
       .fondo2 .navegador2 .enlaces {
         justify-content: center; }
+        .fondo2 .navegador2 .enlaces .menu {
+          font-size: 25px; }
     .fondo2 .conte {
       grid-area: menu;
       display: flex;
@@ -411,3 +413,5 @@ footer {
         height: 50px;
         width: 50px;
         margin: 0px 0px; } }
+
+/*SOBRE NOSOTROS*/
