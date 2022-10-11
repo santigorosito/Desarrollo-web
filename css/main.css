@@ -1,6 +1,6 @@
 * {
-  margin: 0;
-  padding: 0; }
+  margin: 0px;
+  padding: 0px; }
 
 .cuerpo {
   display: grid;
@@ -270,7 +270,7 @@ footer {
 @media screen and (max-width: 500px) {
   .cuerpo {
     grid-template-columns: 1fr;
-    grid-template-rows: 0.2fr 2fr 0.2fr;
+    grid-template-rows: 0.2fr 3fr 0.2fr;
     grid-template-areas: "navegador" "menu" "foter"; }
     .cuerpo .navegador .img1, .cuerpo .navegador2 .img1 {
       display: flex;
