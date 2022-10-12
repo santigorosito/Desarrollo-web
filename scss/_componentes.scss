@@ -3,11 +3,14 @@
         @include flex;
         font-size: 40px;
         color: #ffffff;
-        margin: 10px;}
+        margin: 60px;}
     .textsobre{    
-        @include flex;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
         font-size: 40px;
         font-style: italic;
         color: #ffffff;}
+        padding: 15px;
 }
 
