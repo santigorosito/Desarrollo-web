@@ -141,7 +141,11 @@
 .contacto {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  border: 0.5px solid white;
+  height: 650px;
+  background-image: url(../imagenes/contacto1.jfif);
+  margin: 0px 400px; }
   .contacto .p1, .contacto .p2, .contacto .p3, .contacto .p5 {
     color: beige;
     padding: 10px;
@@ -154,8 +158,9 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  font-size: 50px;
-  color: #ffffff; }
+  font-size: 40px;
+  color: #ffffff;
+  margin: 10px; }
 
 .contenido .textsobre {
   display: flex;
