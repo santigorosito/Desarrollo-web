@@ -55,16 +55,36 @@
                         align-items: flex-start;}
         }
         .contenido{
+                .silla{
                 flex-direction: column;
-                align-items: flex-start;
-                .text1{
-                        display: none;}
+                justify-content: flex-start;
                 .img4{
                         height: 400px;
                         width: 500px;}
+                .text1{
+                        display: flex;
+                        flex-direction: row;
+                        justify-items: center;
+                        align-items: center;
+                        font-size: 40px;
+                        margin: 20px;
+                }
+                }
+                .silla2{
+                        flex-direction: column;
+                        justify-content: flex-start;
                 .img5{
                         height: 400px;
                         width: 500px;}
+                .text1{
+                        display: flex;
+                        flex-direction: row;
+                        justify-items: center;
+                        align-items: center;
+                        font-size: 40px;
+                        margin: 0px;
+                }
+                }
         }
         .footer_div{
                 display: flex;
@@ -227,9 +247,9 @@
 
 /*contacto*/
 @media  screen and (max-width:768px){
-        .cuerpo{
+        .cuerpo2{
                 grid-template-columns: auto auto;
-                grid-template-rows: 0.5fr 5fr 0.5fr;
+                grid-template-rows: 1fr 5fr 1fr;
                 grid-template-areas: 
                 "navegador navegador"
                 "menu menu"
@@ -243,11 +263,15 @@
                 .enlaces{
                         justify-content: center;
                         margin: 20px 0px 0px 0px;
+                        .menu{
+                                font-size: 25px;
+                        }
                 }
         }
         .contenido{
                 grid-area: menu;
                 .contacto{
+                        padding: 30px;
                         .p1{
                                 @include contacto;
                         }
@@ -262,19 +286,21 @@
                         }
                         .textmen{
                                 @include contacto;
+                                margin: 0px 0px 0px 0px;
+                                width: 400px;
                         }
                 }
         }
-        .footer{
+        .footer_div{
                 grid-area: foter;
         }
 }
 }
 
 @media screen and (max-width:500px){
-        .cuerpo{
+        .cuerpo2{
         grid-template-columns: 1fr;
-        grid-template-rows: 0.2fr 2fr 0.2fr;
+        grid-template-rows: 1fr 5fr 1fr;
         grid-template-areas: 
         "navegador"
         "menu"
@@ -291,7 +317,10 @@
                 }
         }
         .contenido{
-        .contacto{
+                grid-area: menu;
+                .contacto{
+                flex-direction: column;
+                justify-content: flex-start;
                 .p1{
                         @include contacto;
                         font-size: 30px;
@@ -317,6 +346,8 @@
                 }
                 }
         }
+        .footer_div{
+                grid-area: foter;}
 }
 }
 

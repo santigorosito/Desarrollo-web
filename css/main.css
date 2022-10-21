@@ -134,6 +134,15 @@
       height: 50px;
       margin: 0px 0px; }
 
+.cuerpo2 {
+  display: grid;
+  grid-template-areas: "navegador navegador" "menu menu" "foter foter";
+  gap: 0px 0px;
+  grid-template-columns: 2fr 2fr;
+  grid-template-rows: 0.5fr 5fr 0.2fr;
+  margin: 10px;
+  background-image: linear-gradient(#57065f, #790976, #020024); }
+
 .navegador .titulo3, .navegador2 .titulo3 {
   font-weight: bold;
   font-size: 110px; }
@@ -151,6 +160,11 @@
   .contacto .textmen {
     padding: 12px;
     width: 400px; }
+  .contacto .boton {
+    display: grid;
+    width: 20px; }
+  .contacto .boton2 {
+    display: grid; }
 
 .contenido {
   padding: 15px; }
@@ -290,17 +304,32 @@ footer {
     .cuerpo .navegador .enlaces, .cuerpo .navegador2 .enlaces {
       flex-direction: column;
       align-items: flex-start; }
-    .cuerpo .contenido {
+    .cuerpo .contenido .silla {
       flex-direction: column;
-      align-items: flex-start; }
-      .cuerpo .contenido .text1 {
-        display: none; }
-      .cuerpo .contenido .img4 {
+      justify-content: flex-start; }
+      .cuerpo .contenido .silla .img4 {
         height: 400px;
         width: 500px; }
-      .cuerpo .contenido .img5 {
+      .cuerpo .contenido .silla .text1 {
+        display: flex;
+        flex-direction: row;
+        justify-items: center;
+        align-items: center;
+        font-size: 40px;
+        margin: 20px; }
+    .cuerpo .contenido .silla2 {
+      flex-direction: column;
+      justify-content: flex-start; }
+      .cuerpo .contenido .silla2 .img5 {
         height: 400px;
         width: 500px; }
+      .cuerpo .contenido .silla2 .text1 {
+        display: flex;
+        flex-direction: row;
+        justify-items: center;
+        align-items: center;
+        font-size: 40px;
+        margin: 0px; }
     .cuerpo .footer_div {
       display: flex;
       flex-direction: row;
@@ -425,62 +454,75 @@ footer {
 
 /*contacto*/
 @media screen and (max-width: 768px) {
-  .cuerpo {
+  .cuerpo2 {
     grid-template-columns: auto auto;
-    grid-template-rows: 0.5fr 5fr 0.5fr;
+    grid-template-rows: 1fr 5fr 1fr;
     grid-template-areas: "navegador navegador" "menu menu" "foter foter"; }
-    .cuerpo .navegador, .cuerpo .navegador2 {
+    .cuerpo2 .navegador, .cuerpo2 .navegador2 {
       grid-area: navegador; }
-      .cuerpo .navegador .titulo3, .cuerpo .navegador2 .titulo3 {
+      .cuerpo2 .navegador .titulo3, .cuerpo2 .navegador2 .titulo3 {
         font-size: 50px;
         margin: 40px 0px 0px 0px; }
-      .cuerpo .navegador .enlaces, .cuerpo .navegador2 .enlaces {
+      .cuerpo2 .navegador .enlaces, .cuerpo2 .navegador2 .enlaces {
         justify-content: center;
         margin: 20px 0px 0px 0px; }
-    .cuerpo .contenido {
+        .cuerpo2 .navegador .enlaces .menu, .cuerpo2 .navegador2 .enlaces .menu {
+          font-size: 25px; }
+    .cuerpo2 .contenido {
       grid-area: menu; }
-      .cuerpo .contenido .contacto .p1, .cuerpo .contenido .contacto .p2, .cuerpo .contenido .contacto .p3, .cuerpo .contenido .contacto .p5 {
-        margin: 40px 40px 0px 0px; }
-      .cuerpo .contenido .contacto .p2 {
-        margin: 40px 40px 0px 0px; }
-      .cuerpo .contenido .contacto .p3 {
-        margin: 40px 40px 0px 0px; }
-      .cuerpo .contenido .contacto .p5 {
-        margin: 40px 40px 0px 0px; }
-      .cuerpo .contenido .contacto .textmen {
-        margin: 40px 40px 0px 0px; }
-    .cuerpo .footer {
+      .cuerpo2 .contenido .contacto {
+        padding: 30px; }
+        .cuerpo2 .contenido .contacto .p1, .cuerpo2 .contenido .contacto .p2, .cuerpo2 .contenido .contacto .p3, .cuerpo2 .contenido .contacto .p5 {
+          margin: 40px 40px 0px 0px; }
+        .cuerpo2 .contenido .contacto .p2 {
+          margin: 40px 40px 0px 0px; }
+        .cuerpo2 .contenido .contacto .p3 {
+          margin: 40px 40px 0px 0px; }
+        .cuerpo2 .contenido .contacto .p5 {
+          margin: 40px 40px 0px 0px; }
+        .cuerpo2 .contenido .contacto .textmen {
+          margin: 40px 40px 0px 0px;
+          margin: 0px 0px 0px 0px;
+          width: 400px; }
+    .cuerpo2 .footer_div {
       grid-area: foter; } }
 
 @media screen and (max-width: 500px) {
-  .cuerpo {
+  .cuerpo2 {
     grid-template-columns: 1fr;
-    grid-template-rows: 0.2fr 2fr 0.2fr;
+    grid-template-rows: 1fr 5fr 1fr;
     grid-template-areas: "navegador" "menu" "foter"; }
-    .cuerpo .navegador .titulo3, .cuerpo .navegador2 .titulo3 {
+    .cuerpo2 .navegador .titulo3, .cuerpo2 .navegador2 .titulo3 {
       margin: 10px 0px 0px 0px;
       font-size: 40px; }
-    .cuerpo .navegador .menu, .cuerpo .navegador2 .menu {
+    .cuerpo2 .navegador .menu, .cuerpo2 .navegador2 .menu {
       display: flex;
       flex-direction: column;
       justify-content: space-between; }
-    .cuerpo .contenido .contacto .p1, .cuerpo .contenido .contacto .p2, .cuerpo .contenido .contacto .p3, .cuerpo .contenido .contacto .p5 {
-      margin: 40px 40px 0px 0px;
-      font-size: 30px; }
-    .cuerpo .contenido .contacto .p2 {
-      margin: 40px 40px 0px 0px;
-      font-size: 30px; }
-    .cuerpo .contenido .contacto .p3 {
-      margin: 40px 40px 0px 0px;
-      font-size: 30px; }
-    .cuerpo .contenido .contacto .p5 {
-      margin: 40px 40px 0px 0px;
-      font-size: 30px; }
-    .cuerpo .contenido .contacto .espacio {
-      width: 400px;
-      height: 20px; }
-    .cuerpo .contenido .contacto .textmen {
-      margin: 10px; } }
+    .cuerpo2 .contenido {
+      grid-area: menu; }
+      .cuerpo2 .contenido .contacto {
+        flex-direction: column;
+        justify-content: flex-start; }
+        .cuerpo2 .contenido .contacto .p1, .cuerpo2 .contenido .contacto .p2, .cuerpo2 .contenido .contacto .p3, .cuerpo2 .contenido .contacto .p5 {
+          margin: 40px 40px 0px 0px;
+          font-size: 30px; }
+        .cuerpo2 .contenido .contacto .p2 {
+          margin: 40px 40px 0px 0px;
+          font-size: 30px; }
+        .cuerpo2 .contenido .contacto .p3 {
+          margin: 40px 40px 0px 0px;
+          font-size: 30px; }
+        .cuerpo2 .contenido .contacto .p5 {
+          margin: 40px 40px 0px 0px;
+          font-size: 30px; }
+        .cuerpo2 .contenido .contacto .espacio {
+          width: 400px;
+          height: 20px; }
+        .cuerpo2 .contenido .contacto .textmen {
+          margin: 10px; }
+    .cuerpo2 .footer_div {
+      grid-area: foter; } }
 
 /*COMPONENTES*/
 @media screen and (max-width: 768px) {
