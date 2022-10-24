@@ -1,23 +1,25 @@
-.cuerpo2{
+.cuerpo3{
     display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 0.5fr auto 0.2fr;
     grid-template-areas: 
     "navegador navegador"
     "menu menu"
     "foter foter";
     gap: 0px 0px;
-    grid-template-columns: 2fr 2fr;
-    grid-template-rows: 0.5fr 5fr 0.2fr;
     margin: 10px;
     background-image: linear-gradient(#57065f, #790976, #020024);
 }
 
 .navegador{
+    grid-area: navegador;
     .titulo3{    
         font-weight: bold;
         font-size: 110px;}
     }
 
 .contacto{
+    grid-area: menu;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -45,3 +47,10 @@
     }
 }
 
+footer{
+    grid-area: foter;
+    margin: 10px;
+    .footer_div{
+    @include foter;
+    }
+}
