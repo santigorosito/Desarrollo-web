@@ -249,12 +249,11 @@
 @media  screen and (max-width:768px){
         .cuerpo3{
                 grid-template-columns: auto auto;
-                grid-template-rows: 1fr auto 1fr;
+                grid-template-rows: 1fr 4fr 1fr;
                 grid-template-areas: 
                 "navegador navegador"
                 "menu menu"
                 "foter foter";
-                height: 100vh;
         .navegador{
                 grid-area: navegador;
                 .titulo3{
@@ -291,7 +290,7 @@
 @media screen and (max-width:500px){
         .cuerpo3{
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr auto 1fr;
+        grid-template-rows: 1fr 4fr 1fr;
         grid-template-areas: 
         "navegador"
         "menu"
