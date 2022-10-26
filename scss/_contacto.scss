@@ -25,6 +25,9 @@
     align-items: center;
     border: 0.5px solid white;
     height: 600px;
+    .espacio:focus{
+        background-color: grey;
+    }
     .p1{
         color: beige;
         padding: 10px;
@@ -35,15 +38,27 @@
         @extend .p1;}
     .p5{
         @extend .p1}
-    .textmen{
+    .textmen:focus{
+        background-color: grey;
         padding: 12px;
-        width: 400px;}
+        width: 400px;} 
+    .boton2{
+        margin: 5px 0px 10px 0px;
+        height: 40px;
+        width: 110px;
+    }
     .boton{
-        display: grid;
+        margin: 10px 0px 0px 0px;
         width: 20px;
     }
-    .boton2{
-        display: grid;
+    .notificacion{
+        display: flex;
+        flex-direction: row;
+    }
+    .aceptar{
+        color: white;
+        font-size: 20px;
+        margin: 10px 0px 0px 5px;
     }
 }
 

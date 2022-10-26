@@ -249,7 +249,7 @@
 @media  screen and (max-width:768px){
         .cuerpo3{
                 grid-template-columns: auto auto;
-                grid-template-rows: 1fr 4fr 1fr;
+                grid-template-rows: 2fr 4fr 1fr;
                 grid-template-areas: 
                 "navegador navegador"
                 "menu menu"
@@ -259,9 +259,9 @@
                 .titulo3{
                         font-size: 50px;
                         margin: 40px 0px 0px 0px;}
-                .enlaces{
-                        justify-content: center;
-                        margin: 20px 0px 0px 0px;
+                .enlaces{        
+                        flex-direction: column;
+                        align-items: flex-start;
                         .menu{
                                 font-size: 25px;}}
         }
@@ -280,7 +280,12 @@
                 .textmen{
                         @include contacto;
                         margin: 0px 0px 0px 0px;
-                        width: 400px;}}
+                        width: 400px;}
+                        .boton2{
+                                margin: 20px 0px 0px 0px;
+                                height: 40px;
+                                width: 110px;
+                        }}
         }
         .footer_div{
                 grid-area: foter;}
@@ -290,7 +295,7 @@
 @media screen and (max-width:500px){
         .cuerpo3{
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 4fr 1fr;
+        grid-template-rows: 0.5fr 4fr 1fr;
         grid-template-areas: 
         "navegador"
         "menu"
@@ -302,7 +307,7 @@
                 .enlaces{
                         display: flex;
                         flex-direction: column;
-                        justify-content: space-between;}
+                        align-items: flex-start;}
         }
         .contenido{
                 grid-area: menu;
@@ -312,6 +317,7 @@
                 .contacto{
                 flex-direction: column;
                 justify-content: flex-start;
+                height: 900px;
                 .p1{
                         @include contacto;
                         font-size: 30px;}
@@ -325,10 +331,16 @@
                         @include contacto;
                         font-size: 30px;}
                 .espacio{
-                        width: 400px;
+                        width: 350px;
                         height: 20px;}
                 .textmen{
-                        margin: 10px;}
+                        margin: 10px;
+                        width: 350px;}
+                .boton2{
+                        margin: 20px 0px 0px 0px;
+                        height: 40px;
+                        width: 110px;
+                }
                 }
         }
         .footer_div{

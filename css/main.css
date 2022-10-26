@@ -156,18 +156,30 @@
   align-items: center;
   border: 0.5px solid white;
   height: 600px; }
+  .contacto .espacio:focus {
+    background-color: grey; }
   .contacto .p1, .contacto .p2, .contacto .p3, .contacto .p5 {
     color: beige;
     padding: 10px;
     margin: 10px; }
-  .contacto .textmen {
+  .contacto .textmen:focus {
+    background-color: grey;
     padding: 12px;
     width: 400px; }
-  .contacto .boton {
-    display: grid;
-    width: 20px; }
   .contacto .boton2 {
-    display: grid; }
+    margin: 5px 0px 10px 0px;
+    height: 40px;
+    width: 110px; }
+  .contacto .boton {
+    margin: 10px 0px 0px 0px;
+    width: 20px; }
+  .contacto .notificacion {
+    display: flex;
+    flex-direction: row; }
+  .contacto .aceptar {
+    color: white;
+    font-size: 20px;
+    margin: 10px 0px 0px 5px; }
 
 footer {
   grid-area: foter;
@@ -467,7 +479,7 @@ footer {
 @media screen and (max-width: 768px) {
   .cuerpo3 {
     grid-template-columns: auto auto;
-    grid-template-rows: 1fr 4fr 1fr;
+    grid-template-rows: 2fr 4fr 1fr;
     grid-template-areas: "navegador navegador" "menu menu" "foter foter"; }
     .cuerpo3 .navegador, .cuerpo3 .navegador2 {
       grid-area: navegador; }
@@ -475,8 +487,8 @@ footer {
         font-size: 50px;
         margin: 40px 0px 0px 0px; }
       .cuerpo3 .navegador .enlaces, .cuerpo3 .navegador2 .enlaces {
-        justify-content: center;
-        margin: 20px 0px 0px 0px; }
+        flex-direction: column;
+        align-items: flex-start; }
         .cuerpo3 .navegador .enlaces .menu, .cuerpo3 .navegador2 .enlaces .menu {
           font-size: 25px; }
     .cuerpo3 .contenido {
@@ -495,13 +507,17 @@ footer {
           margin: 40px 40px 0px 0px;
           margin: 0px 0px 0px 0px;
           width: 400px; }
+        .cuerpo3 .contenido .contacto .boton2 {
+          margin: 20px 0px 0px 0px;
+          height: 40px;
+          width: 110px; }
     .cuerpo3 .footer_div {
       grid-area: foter; } }
 
 @media screen and (max-width: 500px) {
   .cuerpo3 {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 4fr 1fr;
+    grid-template-rows: 0.5fr 4fr 1fr;
     grid-template-areas: "navegador" "menu" "foter"; }
     .cuerpo3 .navegador .titulo3, .cuerpo3 .navegador2 .titulo3 {
       margin: 10px 0px 0px 0px;
@@ -509,7 +525,7 @@ footer {
     .cuerpo3 .navegador .enlaces, .cuerpo3 .navegador2 .enlaces {
       display: flex;
       flex-direction: column;
-      justify-content: space-between; }
+      align-items: flex-start; }
     .cuerpo3 .contenido {
       grid-area: menu;
       display: flex;
@@ -517,7 +533,8 @@ footer {
       justify-content: center; }
       .cuerpo3 .contenido .contacto {
         flex-direction: column;
-        justify-content: flex-start; }
+        justify-content: flex-start;
+        height: 900px; }
         .cuerpo3 .contenido .contacto .p1, .cuerpo3 .contenido .contacto .p2, .cuerpo3 .contenido .contacto .p3, .cuerpo3 .contenido .contacto .p5 {
           margin: 40px 40px 0px 0px;
           font-size: 30px; }
@@ -531,10 +548,15 @@ footer {
           margin: 40px 40px 0px 0px;
           font-size: 30px; }
         .cuerpo3 .contenido .contacto .espacio {
-          width: 400px;
+          width: 350px;
           height: 20px; }
         .cuerpo3 .contenido .contacto .textmen {
-          margin: 10px; }
+          margin: 10px;
+          width: 350px; }
+        .cuerpo3 .contenido .contacto .boton2 {
+          margin: 20px 0px 0px 0px;
+          height: 40px;
+          width: 110px; }
     .cuerpo3 .footer_div {
       display: flex;
       flex-direction: row;
