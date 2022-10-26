@@ -24,7 +24,7 @@
     flex-direction: column;
     align-items: center;
     border: 0.5px solid white;
-    height: 600px;
+    height: 700px;
     .espacio:focus{
         background-color: grey;
     }
@@ -47,19 +47,21 @@
         height: 40px;
         width: 110px;
     }
-    .boton{
-        margin: 10px 0px 0px 0px;
-        width: 20px;
-    }
     .notificacion{
         display: flex;
         flex-direction: row;
-    }
-    .aceptar{
+        .boton{
+            margin: 10px 0px 0px 0px;
+            width: 20px;
+        }
+        .boton:focus{
+            background-color: blue;
+        }
+        .aceptar{
         color: white;
         font-size: 20px;
         margin: 10px 0px 0px 5px;
-    }
+    }}
 }
 
 footer{

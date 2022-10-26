@@ -33,7 +33,7 @@
 @media screen and (max-width:500px){
 .cuerpo{
         grid-template-columns: 1fr;
-        grid-template-rows: 0.2fr 3fr 0.2fr;
+        grid-template-rows: 0.2fr 4fr 0.2fr;
         grid-template-areas: 
         "navegador"
         "menu"
@@ -52,7 +52,8 @@
                         font-size: 70px;}
                 .enlaces{
                         flex-direction: column;
-                        align-items: flex-start;}
+                        align-items: flex-start;
+                        font-size: 70px;}
         }
         .contenido{
                 .silla{
@@ -64,10 +65,10 @@
                 .text1{
                         display: flex;
                         flex-direction: row;
-                        justify-items: center;
-                        align-items: center;
+                        justify-items: start;
                         font-size: 40px;
-                        margin: 20px;
+                        margin: 10px 0px 0px 0px;
+                        width: 450px;
                 }
                 }
                 .silla2{
@@ -79,10 +80,10 @@
                 .text1{
                         display: flex;
                         flex-direction: row;
-                        justify-items: center;
-                        align-items: center;
+                        justify-items: start;
                         font-size: 40px;
-                        margin: 0px;
+                        margin: 10px 0px 0px 0px;
+                        width: 450px;
                 }
                 }
         }
@@ -249,7 +250,7 @@
 @media  screen and (max-width:768px){
         .cuerpo3{
                 grid-template-columns: auto auto;
-                grid-template-rows: 2fr 4fr 1fr;
+                grid-template-rows: 1fr 4fr 1fr;
                 grid-template-areas: 
                 "navegador navegador"
                 "menu menu"
@@ -260,8 +261,7 @@
                         font-size: 50px;
                         margin: 40px 0px 0px 0px;}
                 .enlaces{        
-                        flex-direction: column;
-                        align-items: flex-start;
+                        margin: 30px 0px 0px 0px;
                         .menu{
                                 font-size: 25px;}}
         }
@@ -295,7 +295,7 @@
 @media screen and (max-width:500px){
         .cuerpo3{
         grid-template-columns: 1fr;
-        grid-template-rows: 0.5fr 4fr 1fr;
+        grid-template-rows: 0.5fr 2fr 0.3fr;
         grid-template-areas: 
         "navegador"
         "menu"
@@ -307,7 +307,11 @@
                 .enlaces{
                         display: flex;
                         flex-direction: column;
-                        align-items: flex-start;}
+                        align-items: space-between;
+                        font-size: 70px;
+                        .menu{
+                                margin: 10px 10px 0px 0px;
+                        }}
         }
         .contenido{
                 grid-area: menu;
@@ -336,6 +340,10 @@
                 .textmen{
                         margin: 10px;
                         width: 350px;}
+                .boton{
+                        height: 25px;
+                        width: 25px;
+                }
                 .boton2{
                         margin: 20px 0px 0px 0px;
                         height: 40px;

@@ -155,7 +155,7 @@
   flex-direction: column;
   align-items: center;
   border: 0.5px solid white;
-  height: 600px; }
+  height: 700px; }
   .contacto .espacio:focus {
     background-color: grey; }
   .contacto .p1, .contacto .p2, .contacto .p3, .contacto .p5 {
@@ -170,16 +170,18 @@
     margin: 5px 0px 10px 0px;
     height: 40px;
     width: 110px; }
-  .contacto .boton {
-    margin: 10px 0px 0px 0px;
-    width: 20px; }
   .contacto .notificacion {
     display: flex;
     flex-direction: row; }
-  .contacto .aceptar {
-    color: white;
-    font-size: 20px;
-    margin: 10px 0px 0px 5px; }
+    .contacto .notificacion .boton {
+      margin: 10px 0px 0px 0px;
+      width: 20px; }
+    .contacto .notificacion .boton:focus {
+      background-color: blue; }
+    .contacto .notificacion .aceptar {
+      color: white;
+      font-size: 20px;
+      margin: 10px 0px 0px 5px; }
 
 footer {
   grid-area: foter;
@@ -311,7 +313,7 @@ footer {
 @media screen and (max-width: 500px) {
   .cuerpo {
     grid-template-columns: 1fr;
-    grid-template-rows: 0.2fr 3fr 0.2fr;
+    grid-template-rows: 0.2fr 4fr 0.2fr;
     grid-template-areas: "navegador" "menu" "foter"; }
     .cuerpo .navegador .img1, .cuerpo .navegador2 .img1 {
       display: flex;
@@ -326,7 +328,8 @@ footer {
       font-size: 70px; }
     .cuerpo .navegador .enlaces, .cuerpo .navegador2 .enlaces {
       flex-direction: column;
-      align-items: flex-start; }
+      align-items: flex-start;
+      font-size: 70px; }
     .cuerpo .contenido .silla {
       flex-direction: column;
       justify-content: flex-start; }
@@ -336,10 +339,10 @@ footer {
       .cuerpo .contenido .silla .text1 {
         display: flex;
         flex-direction: row;
-        justify-items: center;
-        align-items: center;
+        justify-items: start;
         font-size: 40px;
-        margin: 20px; }
+        margin: 10px 0px 0px 0px;
+        width: 450px; }
     .cuerpo .contenido .silla2 {
       flex-direction: column;
       justify-content: flex-start; }
@@ -349,10 +352,10 @@ footer {
       .cuerpo .contenido .silla2 .text1 {
         display: flex;
         flex-direction: row;
-        justify-items: center;
-        align-items: center;
+        justify-items: start;
         font-size: 40px;
-        margin: 0px; }
+        margin: 10px 0px 0px 0px;
+        width: 450px; }
     .cuerpo .footer_div {
       display: flex;
       flex-direction: row;
@@ -479,7 +482,7 @@ footer {
 @media screen and (max-width: 768px) {
   .cuerpo3 {
     grid-template-columns: auto auto;
-    grid-template-rows: 2fr 4fr 1fr;
+    grid-template-rows: 1fr 4fr 1fr;
     grid-template-areas: "navegador navegador" "menu menu" "foter foter"; }
     .cuerpo3 .navegador, .cuerpo3 .navegador2 {
       grid-area: navegador; }
@@ -487,8 +490,7 @@ footer {
         font-size: 50px;
         margin: 40px 0px 0px 0px; }
       .cuerpo3 .navegador .enlaces, .cuerpo3 .navegador2 .enlaces {
-        flex-direction: column;
-        align-items: flex-start; }
+        margin: 30px 0px 0px 0px; }
         .cuerpo3 .navegador .enlaces .menu, .cuerpo3 .navegador2 .enlaces .menu {
           font-size: 25px; }
     .cuerpo3 .contenido {
@@ -517,7 +519,7 @@ footer {
 @media screen and (max-width: 500px) {
   .cuerpo3 {
     grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 4fr 1fr;
+    grid-template-rows: 0.5fr 2fr 0.3fr;
     grid-template-areas: "navegador" "menu" "foter"; }
     .cuerpo3 .navegador .titulo3, .cuerpo3 .navegador2 .titulo3 {
       margin: 10px 0px 0px 0px;
@@ -525,7 +527,10 @@ footer {
     .cuerpo3 .navegador .enlaces, .cuerpo3 .navegador2 .enlaces {
       display: flex;
       flex-direction: column;
-      align-items: flex-start; }
+      align-items: space-between;
+      font-size: 70px; }
+      .cuerpo3 .navegador .enlaces .menu, .cuerpo3 .navegador2 .enlaces .menu {
+        margin: 10px 10px 0px 0px; }
     .cuerpo3 .contenido {
       grid-area: menu;
       display: flex;
@@ -553,6 +558,9 @@ footer {
         .cuerpo3 .contenido .contacto .textmen {
           margin: 10px;
           width: 350px; }
+        .cuerpo3 .contenido .contacto .boton {
+          height: 25px;
+          width: 25px; }
         .cuerpo3 .contenido .contacto .boton2 {
           margin: 20px 0px 0px 0px;
           height: 40px;
