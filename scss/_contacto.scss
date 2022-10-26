@@ -1,0 +1,73 @@
+.cuerpo3{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 0.5fr auto 0.2fr;
+    grid-template-areas: 
+    "navegador navegador"
+    "menu menu"
+    "foter foter";
+    gap: 0px 0px;
+    margin: 10px;
+    background-image: linear-gradient(#57065f, #790976, #020024);
+}
+
+.navegador{
+    grid-area: navegador;
+    .titulo3{    
+        font-weight: bold;
+        font-size: 110px;}
+    }
+
+.contacto{
+    grid-area: menu;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 0.5px solid white;
+    height: 700px;
+    .espacio:focus{
+        background-color: grey;
+    }
+    .p1{
+        color: beige;
+        padding: 10px;
+        margin: 10px;}
+    .p2{
+        @extend .p1;}
+    .p3{
+        @extend .p1;}
+    .p5{
+        @extend .p1}
+    .textmen:focus{
+        background-color: grey;
+        padding: 12px;
+        width: 400px;} 
+    .boton2{
+        margin: 5px 0px 10px 0px;
+        height: 40px;
+        width: 110px;
+    }
+    .notificacion{
+        display: flex;
+        flex-direction: row;
+        .boton{
+            margin: 10px 0px 0px 0px;
+            width: 20px;
+        }
+        .boton:focus{
+            background-color: blue;
+        }
+        .aceptar{
+        color: white;
+        font-size: 20px;
+        margin: 10px 0px 0px 5px;
+    }}
+}
+
+footer{
+    grid-area: foter;
+    margin: 10px;
+    .footer_div{
+    @include foter;
+    }
+}

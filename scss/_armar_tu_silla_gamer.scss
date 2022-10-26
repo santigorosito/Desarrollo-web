@@ -1,0 +1,79 @@
+.fondo{
+    display: grid;
+    grid-template-areas: 
+    "navegador navegador"
+    "menu menu"
+    "foter foter";
+    gap: 0px 0px;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 0.5fr 5fr 0.2fr;
+    margin: 10px;
+    background-image: linear-gradient(#57065f,#790976,#020024);
+}
+
+.navegador{
+    grid-area: navegador;
+    .titulo2{
+        font-weight: bold;
+        font-size: 55px;}
+}
+
+.main{
+    grid-area: menu;
+    .h2{
+        @include flex;
+        font-size: 30px;
+        padding: 20px;
+        color: #ffffff;}
+    .video{
+        @include flex;
+        .videotutorial{
+            width: 800px;
+            height: 600px;
+            padding: 20px;
+        }
+    }
+    .fotos{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    .ejem_silla{
+        display: grid;
+        justify-content: center;
+        .p{
+            font-size: 30px;
+            padding: 0px 270px;
+            background-color: #000000;
+            color: #ffffff;
+            border: 02px solid #ffffff;
+        }
+        .img3{
+            @include flex;
+            margin: 50px;
+            @include medidas(600px,600px);}
+    }
+    .ejem_fotos{
+        display: grid;
+        justify-content: center;
+        .p4{
+            font-size: 30px;
+            padding: 0px 270px;
+            background-color: #000000;
+            color: #ffffff;
+            border: 02px solid #ffffff;
+        }
+        .img3{
+            @include flex;
+            margin: 50px;
+            @include medidas(600px,600px);}
+    }
+}
+}
+
+footer{
+    grid-area: foter;
+    margin: 10px;
+    .footer_div{
+    @include foter;
+    }
+}

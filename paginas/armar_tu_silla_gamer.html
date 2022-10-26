@@ -1,44 +1,63 @@
-'SILLAS GAMERS-SANTIAGO GOROSITO'<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title >Armar tu silla</title>
+    <title>Armar tu silla</title>
+    <meta name="description" content="No sabes como armar la silla? Mirá! Explicamos paso a paso de como armarla">
+    <meta name="keywords" content="sillas, silla, gamer, silla gamer, armar una silla gamer, armar una silla, tutotial de silla gamer">
     <link rel="shortcut icon" href="../imagenes/silla-de-gamer.png"/>
-    <link rel="stylesheet" href="../css/estilos.css"/>
+    <link rel="stylesheet" href="../css/main.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body class="fondo">
-    <header>
-    <img src="../imagenes/silla-de-gamer.png" class="img1">
-    <h1 class="titulosilla">Acá veras los pasos de como armar tu Silla Gamer</h1>
-    <nav>
-        <ul class="enlaces">
-            <li><a href="../index.html" target="_blank">Inicio</a></li>
-            <li><a href="producto.html" target="_blank">Producto</a></li>
-            <li><a href="armar_tu_silla_gamer.html" target="_blank">Armar tu silla</a></li>
-            <li><a href="sobre_nosotros.html" target="_blank">Sobre nosotros</a></li>
-            <li><a href="contacto.html" target="_blank">Contacto</a></li>
-        </ul>
-    </nav>
+    <header class="navegador">
+        <nav class="logotitulo">
+            <div class="iniciologo">
+                <img src="../imagenes/logo2.png" class="img1">
+            </div>
+            <div class="titulosilla">
+                <h1 class="titulo2">Acá veras los pasos de como armar tu Silla Gamer</h1>
+            </div>
+        </nav>
+        <nav>
+            <ul class="enlaces">
+                <li><a href="../index.html" target="" class="menu">Inicio</a></li>
+                <li><a href="producto.html" target="" class="menu">Producto</a></li>
+                <li><a href="armar_tu_silla_gamer.html" target="" class="menu">Armar tu silla</a></li>
+                <li><a href="componentes.html" target="" class="menu">Componentes</a></li>
+                <li><a href="contacto.html" target="" class="menu">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
     <main class="main">
         <h2 class="h2">En el siguiente video muestra cada paso para armar la silla gamer sin problemas</h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/0CfrhETEwEo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="videotutorial"></iframe>
+        <article class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/0CfrhETEwEo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" class="videotutorial"></iframe>
+        </article>
+        <div class="fotos">
+            <article class="ejem_silla">
+                <h2 data-aos="zoom-in-right" data-aos-duration="1500" class="p">DESARMADA</h2>
+                <img src="../imagenes/silla desarmada.jpg" data-aos="zoom-in-right" data-aos-duration="1500" class="img3">
+            </article>
+            <article class="ejem_fotos">
+                <h2 data-aos="zoom-in-left" data-aos-duration="1500" class="p4">ARMADA</h2>
+                <img src="../imagenes/silla armada.jpg" data-aos="zoom-in-left" data-aos-duration="1500" class="img3">
+            </article>
+        </div>
     </main>
-    <section>
-        <h2 class="p">DESARMADA</h2>
-        <h2 class="p4">ARMADA</h2>
-    </section>
-    <img src="../imagenes/silla desarmada.jpg" class="img3">
-    <img src="../imagenes/silla armada.jpg" class="img3">
-    </header>
-    <footer>
+    <footer class="footer">
         <div class="footer_div">
-            <img src="../imagenes/instagram.png" class="instagram">
-            <img src="../imagenes/facebook.png" class="facebook">
-            <img src="../imagenes/twitter.png" class="twitter">
-            <img src="../imagenes/whatsapp.png" class="whatsapp">
+            <img src="../imagenes/instagram.png" class="redes">
+            <img src="../imagenes/facebook.png" class="redes">
+            <img src="../imagenes/twitter.png" class="redes">
+            <img src="../imagenes/whatsapp.png" class="redes">
         </div>
     </footer>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
